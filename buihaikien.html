@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // BÀI THI LẦN 2 11H
+        // bài tập 1
+        // cách 1 lọc bằng phương thức sort,không thể lọc số lớn hơn 9
+
+        // let list1 = [4, 3, 6];
+        // let list2 = [7, 1, 9];
+
+        // function SortLists(list1, list2) {
+        //     let sortLists = list1.concat(list2);
+        //     sortLists.sort(function (a, b) {
+        //         return a - b;
+        //     });
+        //     return sortLists;
+        // }
+
+        // let output = SortLists(list1, list2);
+        // console.log(output);
+
+        // cách 2 lọc bằng vòng lặp for, có thể lọc số lớn hơn 9
+
+        // let list1 = [1, 3, 6];
+        // let list2 = [9, 1, 2, 4, 8];
+
+        // function SortLists(list1, list2) {
+        //     let sortLists = list1.concat(list2);
+
+        //     for (let i = 0; i < sortLists.length - 1; i++) {
+        //         for (let j = i + 1; j < sortLists.length; j++) {
+        //             if (sortLists[i] > sortLists[j]) {
+        //                 let x = sortLists[i];
+        //                 sortLists[i] = sortLists[j];
+        //                 sortLists[j] = x;
+        //             }
+        //         }
+        //     }
+        //     return sortLists;
+        // }
+        // let output = SortLists(list1, list2);
+        // console.log(output);
+
+
+
+
+
+
+
+          /*****************/
+        // bài tập 2
+
+            // let arr=[4,6,8,3,7,2];
+            // let target=45;
+            // let index=[];
+            
+            // for (let i=0;i<arr.length-1;i++){
+            //     for(let j=i+1;j<arr.length;j++){
+            //         if(arr[i]+arr[j]==target){
+            //             if(i>j){
+            //                 let c =i;
+            //                  i=j;
+            //                  j=c;
+            //             }
+            //             index = [i, j];
+            //             break;
+            //         }
+            //     }
+            // }
+            // if(index == "" ){
+            //     // console.log(index1,index2);
+            //     console.log("không có giá trị thỏa mãn");
+            // }else{
+            //     console.log(index);
+            // }
+
+
+
+
+
+
+            
+        /*****************/
+        // bài tập 3 
+
+        /*
+        input : arr["flow","flight","float"]
+        output: "fl"
+        input: arr["fowl","fightl","foatl"]
+        output: ""
+        console.log("chuỗi này không có phần tử trùng nhau đầu tiên và liên tiếp " )
+        input : arr["oflw","iflght","oflat"]
+        output: ""
+        console.log("chuỗi này không có phần tử trùng nhau đầu tiên và liên tiếp " )   
+        */
+
+      
+        // function checkArr(arr) {
+        //     if (arr.length === 0) {
+        //         return "";
+        //     }
+        //     let inputcheck = arr[0];
+        //     for (let i = 1; i < arr.length; i++) {
+        //         let temp = arr[i];
+        //         let j = 0;
+        //         while (j < inputcheck.length && j < temp.length && inputcheck[j] === temp[j]) {
+        //             j++;
+        //         }
+        //         inputcheck = inputcheck.substring(0, j);
+        //         if (inputcheck === "") {
+        //             console.log("Chuỗi này không có phần tử trùng nhau đầu tiên và liên tiếp.");
+        //             return "";
+        //         }
+        //     }
+        //     return inputcheck;
+        // }
+        // let arr1 = ["flow", "floight", "float", "floast"];
+        // let result1 = checkArr(arr1);
+        // console.log(result1);
+
+        // let arr2 = ["fowl", "fightl", "foatl", "flast"];
+        // let result2 = checkArr(arr2);
+        // console.log(result2);
+
+        // let arr3 = ["oflw", "iflght", "oflat"];
+        // let result3 = checkArr(arr3);
+        // console.log(result3);
+
+
+    </script>
+</body>
+
+</html>
